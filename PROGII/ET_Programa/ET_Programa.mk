@@ -5,15 +5,15 @@
 ## Debug
 ProjectName            :=ET_Programa
 ConfigurationName      :=Debug
-WorkspacePath          := "C:\Users\pc14\Documents\trabalho\Extraterrestre\PROGII"
-ProjectPath            := "C:\Users\pc14\Documents\trabalho\Extraterrestre\PROGII\ET_Programa"
+WorkspacePath          := "G:\Abner\Programacao\Programasfeitos\projetosCodeLite\ET\PROGII"
+ProjectPath            := "G:\Abner\Programacao\Programasfeitos\projetosCodeLite\ET\PROGII\ET_Programa"
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
-User                   :=pc14
-Date                   :=09/25/14
+User                   :=ABGerson
+Date                   :=09/26/14
 CodeLitePath           :="C:\Program Files\CodeLite"
 LinkerName             :=C:/MinGW-4.8.1/bin/g++.exe 
 SharedObjectLinkerName :=C:/MinGW-4.8.1/bin/g++.exe -shared -fPIC
@@ -91,7 +91,7 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp $(IntermediateDirectory)/main.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/pc14/Documents/trabalho/Extraterrestre/PROGII/ET_Programa/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "G:/Abner/Programacao/Programasfeitos/projetosCodeLite/ET/PROGII/ET_Programa/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(DependSuffix): main.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM "main.cpp"
 
@@ -99,7 +99,7 @@ $(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) "main.cpp"
 
 $(IntermediateDirectory)/Extraterrestre.cpp$(ObjectSuffix): Extraterrestre.cpp $(IntermediateDirectory)/Extraterrestre.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/pc14/Documents/trabalho/Extraterrestre/PROGII/ET_Programa/Extraterrestre.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Extraterrestre.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "G:/Abner/Programacao/Programasfeitos/projetosCodeLite/ET/PROGII/ET_Programa/Extraterrestre.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Extraterrestre.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/Extraterrestre.cpp$(DependSuffix): Extraterrestre.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Extraterrestre.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Extraterrestre.cpp$(DependSuffix) -MM "Extraterrestre.cpp"
 
