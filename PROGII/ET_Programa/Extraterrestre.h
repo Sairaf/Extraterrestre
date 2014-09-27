@@ -25,47 +25,45 @@ public:
           //setters
 		  
 	void setNome(const string&);
-    void setRaca(const string&);
+        void setRaca(const string&);
 	void setPoder(const string&);
 	void setNivelPoder(const int&);
 	void setFraqueza(const string&);
-    void setAgressividade(const int&);
+        void setAgressividade(const int&);
 	void setQntdOlhos(const int&);          
 	void setValioso(const string&);
 	
 	      //getters 
 		  
-    string getNome() const;
-    string getRaca() const;
-    string getPoder() const;
+        string getNome() const;
+     	string getRaca() const;
+     	string getPoder() const;
 	int getNivelPoder() const;
-    string getFraqueza() const;
+    	string getFraqueza() const;
 	int getAgressividade() const;
 	string getValioso() const;
 	int getQntdOlhos() const;          
     
     
    
-   const int viagemAoPlaneta()
-   {
-	
-    double anoLuz, tecnologia, distancia;
-    cout << "Quantos anos luz o planeta se encontra "<< endl;
-    cin >> anoLuz;
-    cout << "Qual o nivel de tecologia daraca alienigina (de 0 a N)"<< endl;
-    cin >> tecnologia;
-    distancia =  (9460528410545.4362688 * anoLuz)/ (tecnologia * 10000);
-    if(distancia == 0)
-    {
-     cout <<" JA CHEGOU SEU DISCO VOADOR!!!" << endl;	 
-    }
-    return distancia;
-	
-   };
+	const int viagemAoPlaneta()
+	{
+	 double anoLuz, tecnologia, distancia;
+    	 cout << "Quantos anos luz o planeta se encontra "<< endl;
+    	 cin >> anoLuz;
+    	 cout << "Qual o nivel de tecologia daraca alienigina (de 0 a N)"<< endl;
+    	 cin >> tecnologia;
+    	 distancia =  (9460528410545.4362688 * anoLuz)/ (tecnologia * 10000);
+    	 if(distancia == 0)
+    	 {
+      	  cout <<" JA CHEGOU SEU DISCO VOADOR!!!" << endl;	 
+    	 }
+    	 return distancia;
+        };
  
-   const int calculo(Extraterrestre, int, int);
-   void listar(const Extraterrestre); 
-   void adicionar(Extraterrestre, const string,const string,const string,const int, const string, const int,const int, const string );
+   	const int calculo(Extraterrestre, int, int);
+   	void listar(const Extraterrestre); 
+   	void adicionar(Extraterrestre, const string,const string,const string,const int, const string, const int,const int, const string );
    
    
 };
